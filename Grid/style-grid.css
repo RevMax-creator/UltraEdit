@@ -1,0 +1,146 @@
+.main .text-box {
+    display: grid;
+    grid-template-columns: [a]0.5fr [b]2fr [c]0.5fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    row-gap: 12px;
+}
+
+
+.main .text-box h1 {
+    height: 65px;
+    grid-column: b/c;
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+}
+
+.main .text-box h1 a {
+    text-decoration: none;
+}
+
+.main .text-box h1 a img {
+    width: 78px;
+}
+
+.main .text-box .message {
+    height: 65px;
+    grid-column: b/c;
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.main .text-box>button {
+    padding: 12px 20px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #00b6d1;
+    grid-column: b/c;
+}
+
+.main .text-box>button a {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main .text-box>button:hover {
+    cursor: pointer;
+    transition: background-color 0.5s ease 0.15s;
+    background-color: #0093aa;
+}
+
+.main .text-box .separator {
+    grid-column: b/c;
+    margin-top: 70px;
+    font-weight: normal;
+    background-size: 50px auto;
+    background-position: left center;
+    background-image: url(https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png);
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    justify-self: baseline;
+}
+
+.main .text-box .separator small {
+    font-size: x-small;
+}
+
+.main .download-container {
+    grid-column: b/c;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px
+}
+
+.main .download-container .downloads {
+    background-color: #f9f9f9;
+    height: 148px;
+    width: 228px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.main .download-container .downloads button {
+    cursor: pointer;
+    border-style: none;
+}
+
+.main .download-container .downloads button a {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.main .download-container .downloads p {
+    font-size: 7px;
+    word-wrap: break-word;
+}
+
+.main .download-container .downloads h3 {
+    padding-bottom: 23px;
+}
+
+.main .download-container .downloads h4 {
+    padding-bottom: 23px;
+    font-weight: normal;
+    font-size: xx-small;
+}
+
+.main .download-container .downloads h6 {
+    font-weight: 100;
+    font-size: xx-small;
+}
+
+.main .download-container .downloads div {
+    padding-top: 23px;
+}
+
+.English {
+    padding: 11px;
+}
+
+@media screen and (max-width: 848px) {
+
+    .main .download-container {
+        grid-column: b/c;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px
+    }
+
+}
